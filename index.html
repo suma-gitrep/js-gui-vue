@@ -26,6 +26,10 @@
   <!-- Vue component styles -->
   <link href="components/adder/adder.css" rel="stylesheet">
   <link href="components/subtracter/subtracter.css" rel="stylesheet">
+  <link href="components/mult/multi.css" rel="stylesheet">
+  <link href="components/string/string.css" rel="stylesheet">
+
+
 
 </head>
 
@@ -78,6 +82,50 @@
 
         <h3 class="mt-2">{{difference}}</h3>
       </article>
+      
+      <article id="multiplier" class="col-md-4 ">
+        <h2>No build tools required!</h2>
+        <p>Here's another component.</p>
+        <p>This one subtracts!</p>
+
+        <fieldset class="mt-2">
+          <label for="first">Enter first number (1 to 100):</label>
+          <input v-model="firstNum" id="firstNum" type="number" min="1" max="100">
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-2">
+          <label for="second">Enter second number (1 to 100):</label>
+          <input v-model="secondNum" id="secondNum" type="number" min="1" max="100">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+        
+        <h3 class="mt-2">{{multiply}}</h3>
+      </article>
+      <article id="largerstring" class="col-md-4 ">
+        <h2>No build tools required!</h2>
+        <p>Here's another component.</p>
+        <p>This one large!</p>
+
+        <fieldset class="mt-2">
+          <label for="first">Enter first String (1 to 100):</label>
+          <input v-model="firstString" id="firstString" type="text" min="1" max="100">
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-2">
+          <label for="second">Enter second String (1 to 100):</label>
+          <input v-model="secondString" id="secondString" type="text" min="1" max="100">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+        <fieldset class="mt-2">
+          <label for="second">Enter second String (1 to 100):</label>
+          <input v-model="thirdString" id="thirdString" type="text" min="1" max="100">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+
+        <h3 class="mt-2">{{string}}</h3>
+      </article>
 
       <article class="col-md-4 ">
         <h2>Build tools would help us combine HTML files</h2>
@@ -128,6 +176,10 @@
 
   <script src="components/adder/adder.js"></script>
   <script src="components/subtracter/subtracter.js"></script>
+  <script src="components/mult/multi.js"></script>
+  <script src="components/string/string.js"></script>
+
+
 </body>
 
 </html>
